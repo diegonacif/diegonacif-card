@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --yellow: #f2cb05;
     --orange: #f2a922;
     --orange-text: #b67c34;
+    --blue: #2b2bd9;
     --red: #a62f26;
     --white: #dadada;
     --black: #141414;
@@ -20,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
   }
 `;
  
