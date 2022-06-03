@@ -24,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
 
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 `;
  
 export default GlobalStyle;

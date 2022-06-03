@@ -4,16 +4,18 @@ import { Container } from './styles';
 export function Header() {
   return (
     <Container>
-      <div className="myName">
-        <span>&lt;</span>
-        <h1>Diego Nacif</h1>
-        <span>&gt;</span>
-      </div>
+      <a href="#home">
+        <div className="myName">
+          <span>&lt;</span>
+          <h1>Diego Nacif</h1>
+          <span>&gt;</span>
+        </div>
+      </a>
       <div className="menus">
-        <span>Sobre</span>
-        <span>Projetos</span>
-        <span>Tecnologias</span>
-        <button>Contato</button>
+        <a href="#about"><span>Sobre</span></a>
+        <a href="#projects"><span>Projetos</span></a>
+        <a href="#tecnologies"><span>Tecnologias</span></a>
+        <a href="#contact"><span>Contato</span></a>
       </div>  
     </Container>  
   );

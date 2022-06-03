@@ -3,8 +3,8 @@ import { Container } from './styles';
 
 export function Hello() {
   return(
-    <Container>
-      <div className="helloText">
+    <Container id="home">
+      <div className="helloText" >
         <span>Olá, meu nome é</span>
         <div className="myName">
           <h2>Diego&nbsp;</h2>

@@ -4,7 +4,7 @@ import { Container, Cards } from './styles';
 
 export function Projects() {
   return (
-    <Container>
+    <Container id="projects">
       <div className="projectsTitle">
         <span>&lt;</span>
         <h2>Projetos</h2>

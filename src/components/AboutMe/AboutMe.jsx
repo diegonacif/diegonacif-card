@@ -3,7 +3,7 @@ import { Container } from './styles';
 
 export function AboutMe() {
   return (
-    <Container>
+    <Container id="about">
       <section>
         <div className="aboutMe">
           <span>&lt;</span>
