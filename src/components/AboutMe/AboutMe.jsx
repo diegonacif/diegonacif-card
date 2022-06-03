@@ -18,4 +18,4 @@ export function AboutMe() {
       <div className="myPhoto" />
     </Container>
   );
-}
+};

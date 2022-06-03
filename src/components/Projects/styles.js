@@ -1,24 +1,20 @@
 import styled from 'styled-components';
-import photograph from '../../assets/justMe.png';
 
 export const Container = styled.main`
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
   align-items: center;
   justify-items: center;
   width: 100vw;
   height: calc(100vh - 3.5rem);
-  background-color: var(--gray);
+  background-color: var(--black);
   color: var(--white);
 
-
-  section {
-    width: 30rem;
-    max-width: 100%;
-
-    .aboutMe {
+  .projectsTitle {
       display: flex;
       align-items: center;
+      justify-content: center;
       row-gap: 1.25rem;
       width: 30rem;
       max-width: 100%;
@@ -40,26 +36,12 @@ export const Container = styled.main`
         }
       }
     }
+`
 
-    .aboutMeText {
-      margin-top: 2.5rem;
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-
-      p:nth-child(2) {
-        margin-top: 1rem;
-      }
-    }
-
-  }
-
-  .myPhoto {
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    background: url(${photograph});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+export const Cards = styled.div`
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  width: 100%;
+  height: 100%;
 `
