@@ -39,8 +39,9 @@ export const Container = styled.main`
   `
 
   export const Techs = styled.div`
-    width: 100%;
-    min-width: min-content;
+    /* width: 100%; */
+    /* min-width: min-content; */
+    width: clamp(15rem, 80rem, 100%);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -52,6 +53,7 @@ export const Container = styled.main`
     align-items: center;
     justify-content: center;
     width: 15rem;
+    min-width: 15rem;
     height: max-content;
     /* background-color: var(--green); */
     font-weight: 700;
