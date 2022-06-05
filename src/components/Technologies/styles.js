@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  display: grid;
+   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20% 80%;
   align-items: center;
   justify-items: center;
   width: 100vw;
   height: 100vh;
-  /* height: calc(100vh - 3.5rem); */
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--gray);
+  color: var(--white);  
 
-  .projectsTitle {
+  .techTitle {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -37,12 +36,33 @@ export const Container = styled.main`
         }
       }
     }
-`
+  `
 
-export const Cards = styled.div`
-  display: flex;
-  justify-content: center;
-  column-gap: 1.5rem;
-  width: 100%;
-  height: 100%;
-`
+  export const Techs = styled.div`
+    width: 100%;
+    min-width: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  `
+
+  export const TechCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: max-content;
+    /* background-color: var(--green); */
+    font-weight: 700;
+
+    img {
+      width: 100%;
+
+      &#jsImg {
+        width: 10rem;
+        margin: 1.8rem 0;
+      }
+    }
+    
+  `

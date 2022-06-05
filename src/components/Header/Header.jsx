@@ -14,7 +14,7 @@ export function Header() {
       <div className="menus">
         <a href="#about"><span>Sobre</span></a>
         <a href="#projects"><span>Projetos</span></a>
-        <a href="#tecnologies"><span>Tecnologias</span></a>
+        <a href="#technologies"><span>Tecnologias</span></a>
         <a href="#contact"><span>Contato</span></a>
       </div>  
     </Container>  
