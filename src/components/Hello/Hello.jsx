@@ -1,5 +1,8 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, Rotate } from './styles';
+
+import sofiArt from '../../assets/sofiasArt-removebg.png';
+import reactLogo from '../../assets/react-logo.png';
 
 export function Hello() {
   return(
@@ -14,6 +17,18 @@ export function Hello() {
         <div className="buttons">
           <button>DOWNLOAD CV</button>
           <button>CONTATO</button>
+        </div>
+      </div>
+      <div className="artWp">
+        <div id="blobBg">
+          <img src={sofiArt} alt="Diego by Sofia" id="chibiImg" />
+          <div className="reactBg">
+            <Rotate>
+              <img src={reactLogo} alt="react logo" id="reactLogo" />
+            </Rotate>
+          </div>
+          <div className="cssBg">CSS</div>
+          
         </div>
       </div>
     </Container>
