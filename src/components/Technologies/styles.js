@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-   display: grid;
+  display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20% 80%;
   align-items: center;
@@ -12,30 +12,30 @@ export const Container = styled.main`
   color: var(--white);  
 
   .techTitle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      row-gap: 1.25rem;
-      width: 30rem;
-      max-width: 100%;
-  
-      h2 {
-        font-size: 3rem;
-      }
-  
-      span {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: var(--blue);  
-  
-        &:nth-of-type(1) {
-          margin-right: 0.25rem;
-        }  
-        &:nth-of-type(2) {
-          margin-left: 0.25rem;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.25rem;
+    width: 30rem;
+    max-width: 100%;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    span {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--blue);  
+
+      &:nth-of-type(1) {
+        margin-right: 0.25rem;
+      }  
+      &:nth-of-type(2) {
+        margin-left: 0.25rem;
       }
     }
+  }
   `
 
   export const Techs = styled.div`

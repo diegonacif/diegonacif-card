@@ -10,11 +10,11 @@ export const Container = styled.main`
   height: 3.5rem;
   background-color: var(--gray);
   color: var(--white);
+  z-index: 1;
 
   a, a:hover, a:focus, a:active {
     text-decoration: none;
-    color: inherit;
-    
+    color: inherit;    
   }
 
   h1 {
