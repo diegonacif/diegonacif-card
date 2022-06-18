@@ -1,6 +1,11 @@
 import React from 'react';
 import { Container } from './styles';
 
+import { IconContext } from 'react-icons';
+import { FaLinkedin, FaGithub, FaTelegram, FaWhatsapp } from 'react-icons/fa';
+import { ImMail } from 'react-icons/im';
+import { IoLogoWhatsapp } from 'react-icons/io';
+
 export function Contact() {
   return (
     <Container id="contact">
@@ -14,7 +19,28 @@ export function Contact() {
           Entre em contato comigo através dos links abaixo ou preencha os campos ao lado.
         </div>
         <div className="contactIcons">
-          <h3>Icons</h3>
+          <IconContext.Provider value={{ className: "global-react-icons" }}>
+            <FaLinkedin 
+              onClick={() => window.open('https://www.linkedin.com/in/diego-nacif/')}
+              title="LinkedIn"
+            />
+            <FaGithub 
+              onClick={() => window.open('https://github.com/diegonacif')} 
+              title="Github" 
+            />
+            <FaTelegram
+              onClick={() => window.open('https://t.me/DiegoNacif')}
+              title="Telegram"
+            />
+            <IoLogoWhatsapp 
+              onClick={() => window.open('https://wa.me/5584991751476')}
+              title="Whatsapp"
+            />
+            <ImMail 
+              onClick={() => window.open('mailto:diegoreisnacif@gmail.com?subject="Contato LandingPage"')}
+              title="Mail"
+            />
+          </IconContext.Provider>
         </div>
       </section>
 

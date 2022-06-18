@@ -49,7 +49,20 @@ export const Container = styled.main`
       }
   
       .contactIcons {
+        display: flex;
+        justify-content: space-evenly;
         margin-top: 3rem;
+
+        .global-react-icons {
+          vertical-align: middle;
+          width: 2.5rem;
+          height: 2.5rem;
+          color: var(--blue);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
 
@@ -70,6 +83,11 @@ export const Container = styled.main`
           color: var(--white);
           font-size: 1rem;
           padding: 0.25rem;
+
+          &:focus {
+            outline: none;
+            border: 1px solid var(--light-blue);
+          }          
         }
 
         ~ .inputWp {
@@ -78,7 +96,7 @@ export const Container = styled.main`
 
         textarea {
           height: inherit;
-          font-size: 16px;
+          font-size: 1rem;
         }
       }
 

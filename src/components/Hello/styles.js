@@ -33,9 +33,9 @@ export const Container = styled.main`
       
     #chibiImg {
       position: absolute;
+      transform: translate(-50%, -50%);
       top: 69%;
       left: 57%;
-      transform: translate(-50%, -50%);
 
       width: 21rem;      
     }
@@ -51,7 +51,6 @@ export const Container = styled.main`
       width: 3rem;
       height: 3rem;
       background-color: var(--gray);
-
 
       #reactLogo {
         position: absolute;
@@ -139,6 +138,7 @@ const rotate = keyframes`
 `
 
 export const Rotate = styled.div`
+
   display: inline-block;
   animation: ${rotate} 15s linear infinite;
 `;
