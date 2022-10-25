@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import { devices } from '../../styles/devices';
 
 export const Container = styled.main`
-  position: fixed;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +14,7 @@ export const Container = styled.main`
   height: 3.5rem;
   background-color: var(--gray);
   color: var(--white);
-  z-index: 1;
+  /* z-index: 1; */
 
   a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -50,6 +54,20 @@ export const Container = styled.main`
 
       &:nth-of-type(2) {
         margin-left: 0.25rem;
+      }
+    }
+  }
+
+  @media only screen and (${devices.mobile}) {
+    padding: 0 1rem;
+
+    .myName {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      span {
+        font-size: 1.3rem;
       }
     }
   }

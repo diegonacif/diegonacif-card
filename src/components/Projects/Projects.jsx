@@ -11,9 +11,9 @@ export function Projects() {
         <span>&gt;</span>
       </div>
       <Cards>
-        <ProjectsCards />
-        <ProjectsCards />
-        <ProjectsCards />
+        <ProjectsCards repoId='20' />
+        <ProjectsCards repoId='5' />
+        <ProjectsCards repoId='10'/>
       </Cards>
     </Container>
   );

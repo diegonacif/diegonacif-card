@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import blob from '../../assets/blob.svg';
+import { devices } from '../../styles/devices';
 
 
 export const Container = styled.main`
@@ -8,7 +9,7 @@ export const Container = styled.main`
   align-items: center;
   justify-items: center;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 3.5rem);
   background-color: var(--black);
   color: var(--white);
 
@@ -127,6 +128,42 @@ export const Container = styled.main`
           margin-left: 1rem;
         }
         
+      }
+    }
+  }
+
+  @media only screen and (${devices.mobile}) {
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    padding: 0 1rem;
+
+    .artWp {
+      order: 1;
+    }
+
+    .helloText {
+      order: 2;
+      row-gap: 1rem;
+      align-items: center;
+
+      span {
+        font-size: 1.5rem;
+      }
+
+      .myName {
+        h2 {
+          font-size: 3.5rem;
+        }
+      }
+
+      .buttons {
+        justify-content: center;
+        height: 3rem;
+
+        button {
+          width: 10rem;
+
+        }
       }
     }
   }

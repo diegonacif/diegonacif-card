@@ -1,14 +1,33 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Container, Screenshot } from './styles';
 
-export function ProjectsCards() {
+import api from '../../services/axios';
+
+export function ProjectsCards({ repoId }) {
+  const [repo, setRepo] = useState([]);
+
+  useEffect(() => {
+    async function getRepository() {
+      await api
+        .get(`/repos`)
+        .then((response) => setRepo(response.data[repoId]))
+        .catch((err) => {
+          console.error("ops! ocorreu um erro" + err);
+        });
+      }      
+      getRepository();
+    }, [repoId]);
+    
+    console.log(repo.name);
   return (
     <Container>
       <Screenshot />
-      <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ducimus obcaecati labore reiciendis aliquid saepe unde commodi dicta natus aut blanditiis laborum id recusandae earum rem, a quisquam libero ex?</span>
+      <span>{repo.name}</span>
+      <span>{repo.created_at}</span>
+      <span>{repo.updated_at}</span>
       <div className="buttons">
         <button>VER O SITE</button>
-        <button>GITHUB</button>
+        <button onClick={() => window.open(`${repo.html_url}`)}>GITHUB</button>
       </div>
     </Container>
   );

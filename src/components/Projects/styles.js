@@ -8,9 +8,12 @@ export const Container = styled.main`
   justify-items: center;
   width: 100vw;
   height: 100vh;
+  min-height: max-content;
   /* height: calc(100vh - 3.5rem); */
   background-color: var(--black);
   color: var(--white);
+
+  padding-top: 4.5rem;
 
   .projectsTitle {
       display: flex;

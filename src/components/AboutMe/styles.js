@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import photograph from '../../assets/justMe.png';
+import { devices } from '../../styles/devices';
 
 export const Container = styled.main`
   display: grid;
@@ -21,7 +22,7 @@ export const Container = styled.main`
       display: flex;
       align-items: center;
       row-gap: 1.25rem;
-      width: 30rem;
+      width: fit-content;
       max-width: 100%;
   
       h2 {
@@ -62,5 +63,31 @@ export const Container = styled.main`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  @media only screen and (${devices.mobile}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4.5rem 1rem 0;
+    
+
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      /* justify-content: center;
+      align-items: center; */
+
+      .aboutMe {
+        align-self: center;
+      }
+    }
+
+    .myPhoto {
+      margin-top: 4rem;
+    }
+
   }
 `

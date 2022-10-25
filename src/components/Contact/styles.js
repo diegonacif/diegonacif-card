@@ -58,9 +58,13 @@ export const Container = styled.main`
           width: 2.5rem;
           height: 2.5rem;
           color: var(--blue);
-
+          transition: color 0.1s, transform 0.1s;
+          
           &:hover {
             cursor: pointer;
+            color: var(--light-blue);
+            transform: scale(1.1);
+            transition: color 0.2s, transform 0.2s;
           }
         }
       }

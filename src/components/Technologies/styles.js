@@ -9,7 +9,9 @@ export const Container = styled.main`
   width: 100vw;
   height: 100vh;
   background-color: var(--gray);
-  color: var(--white);  
+  color: var(--white);
+
+  padding-top: 4.5rem;
 
   .techTitle {
     display: flex;
