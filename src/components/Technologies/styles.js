@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../styles/devices';
 
 export const Container = styled.main`
   display: grid;
@@ -43,10 +44,11 @@ export const Container = styled.main`
   export const Techs = styled.div`
     /* width: 100%; */
     /* min-width: min-content; */
-    width: clamp(15rem, 80rem, 100%);
+    width: clamp(15rem, 80rem, 100vw);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* flex-wrap: wrap; */
   `
 
   export const TechCard = styled.div`
@@ -69,4 +71,16 @@ export const Container = styled.main`
       }
     }
     
+    @media only screen and (${devices.mobile}) {
+      width: 10rem;
+      height: 10rem;
+      min-width: 2rem;
+
+      img {
+        &#jsImg {
+          width: 5.6rem;
+          margin: 1.1rem 0;
+        }
+      }
+    }
   `

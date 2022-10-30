@@ -77,8 +77,6 @@ export const Container = styled.main`
       display: flex;
       flex-direction: column;
       width: 100%;
-      /* justify-content: center;
-      align-items: center; */
 
       .aboutMe {
         align-self: center;

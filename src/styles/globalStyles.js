@@ -29,6 +29,16 @@ const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
   }
+
+  .react-multi-carousel-list {
+    width: 90%;
+    height: 90%;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `;
  
 export default GlobalStyle;

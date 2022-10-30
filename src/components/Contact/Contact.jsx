@@ -16,7 +16,7 @@ export function Contact() {
           <span>&gt;</span>
         </div>
         <div className="contactText">
-          Entre em contato comigo através dos links abaixo ou preencha os campos ao lado.
+          Entre em contato comigo através dos links abaixo, que terei prazer em responder.
         </div>
         <div className="contactIcons">
           <IconContext.Provider value={{ className: "global-react-icons" }}>
@@ -44,7 +44,7 @@ export function Contact() {
         </div>
       </section>
 
-      <section id="rightSection">
+      {/* <section id="rightSection">
         <div className="inputWp">
           <label htmlFor="name">Nome</label>
           <input type="text" id="name" />
@@ -58,7 +58,7 @@ export function Contact() {
           <textarea name="message" id="message" cols="30" rows="6"></textarea>
         </div>
         <button>ENVIAR</button>
-      </section>
+      </section> */}
     </Container>
   );
 };

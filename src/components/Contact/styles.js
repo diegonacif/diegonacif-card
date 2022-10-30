@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { devices } from '../../styles/devices';
 
 export const Container = styled.main`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   grid-template-rows: 100%;
   align-items: center;
   justify-items: center;
@@ -25,7 +26,7 @@ export const Container = styled.main`
         max-width: 100%;
     
         h2 {
-          font-size: 2.5rem;
+          font-size: 3rem;
         }
     
         span {
@@ -44,7 +45,7 @@ export const Container = styled.main`
   
       .contactText {
         margin-top: 3rem;
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         text-align: justify;
       }
   
@@ -115,5 +116,9 @@ export const Container = styled.main`
         color: var(--white);
       }
     }
+  }
+
+  @media only screen and (${devices.mobile}) {
+
   }
 `
