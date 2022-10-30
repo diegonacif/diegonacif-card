@@ -30,7 +30,7 @@ export function Projects() {
         <span>&gt;</span>
       </div>
       <Cards>
-        <Carousel
+        {/* <Carousel
           responsive={responsive}
           draggable={false}
           ssr={true}
@@ -46,7 +46,7 @@ export function Projects() {
           <ProjectsCards repoId='20' />
           <ProjectsCards repoId='5' />
           <ProjectsCards repoId='10'/>
-        </Carousel>
+        </Carousel> */}
       </Cards>
     </Container>
   );
