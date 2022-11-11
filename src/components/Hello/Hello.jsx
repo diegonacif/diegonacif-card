@@ -4,7 +4,8 @@ import sofiArt from '../../assets/sofiasArt-removebg.png';
 import reactLogo from '../../assets/react-logo.png';
 
 export function Hello() {
-  const cvButtonUrl = 'https://drive.google.com/file/d/1oH0SgksL8lIz5LlPOAkbb335StbjRR1C/view?usp=share_link';
+  const cvUrl = 'https://drive.google.com/file/d/1oH0SgksL8lIz5LlPOAkbb335StbjRR1C/view?usp=share_link';
+  const githubUrl = 'https://github.com/diegonacif';
 
   return(
     <Container id="home">
@@ -16,8 +17,8 @@ export function Hello() {
         </div>
         <span>Desenvolvedor <b>Front-End</b></span>
         <div className="buttons">
-          <button onClick={() => window.open(cvButtonUrl)}>DOWNLOAD CV</button>
-          <button>CONTATO</button>
+          <button onClick={() => window.open(cvUrl)}>DOWNLOAD CV</button>
+          <button onClick={() => window.open(githubUrl)}>GITHUB</button>
         </div>
       </div>
       <div className="artWp">
