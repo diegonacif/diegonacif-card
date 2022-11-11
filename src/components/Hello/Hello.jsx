@@ -2,6 +2,10 @@ import { Container, Rotate } from './styles';
 
 import sofiArt from '../../assets/sofiasArt-removebg.png';
 import reactLogo from '../../assets/react-logo.png';
+import jsLogo from '../../assets/js-round-logo.png';
+import htmlLogo from '../../assets/html5-logo.png';
+import cssLogo from '../../assets/css3-logo.png';
+import sassLogo from '../../assets/sass-logo.png';
 
 export function Hello() {
   const cvUrl = 'https://drive.google.com/file/d/1oH0SgksL8lIz5LlPOAkbb335StbjRR1C/view?usp=share_link';
@@ -29,7 +33,18 @@ export function Hello() {
               <img src={reactLogo} alt="react logo" id="reactLogo" />
             </Rotate>
           </div>
-          <div className="cssBg">CSS</div>
+          <div className="cssBg">
+            <img src={cssLogo} alt="css logo" />
+          </div>
+          <div className="jsBg">
+            <img src={jsLogo} alt="javascript logo" />
+          </div>
+          <div className="htmlBg">
+            <img src={htmlLogo} alt="javascript logo" />
+          </div>
+          <div className="sassBg">
+            <img src={sassLogo} alt="sass logo" />
+          </div>
           
         </div>
       </div>

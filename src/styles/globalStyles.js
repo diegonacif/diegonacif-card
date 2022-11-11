@@ -25,6 +25,8 @@ const GlobalStyle = createGlobalStyle`
     -webkit-box-sizing: border-box;
 
     font-family: Arial, Helvetica, sans-serif;
+
+    -webkit-tap-highlight-color: transparent; // remove color highlight on tap
   }
 
   html {

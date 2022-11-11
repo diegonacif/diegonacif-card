@@ -68,14 +68,64 @@ export const Container = styled.main`
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      top: 45%;
+      top: 44%;
       left: 2%;
-      width: 2.8rem;
-      height: 2.4rem;
-      border-radius: 0.5rem;
-      background-color: var(--black);
+      width: 2.9rem;
+      height: 2.9rem;
+      border-radius: 50%;
+      background-color: #e3622b;
 
-      outline: 3px solid var(--blue);
+      img {
+        width: 69%;
+        transform: translateY(0.1rem);
+      }
+    }
+
+    .htmlBg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 63%;
+      left: 4.7%;
+      width: 2.9rem;
+      height: 2.9rem;
+      border-radius: 50%;
+      background-color: rgb(10, 61, 173);
+
+      img {
+        width: 59%;
+        transform: translateY(0.1rem);
+      }
+    }
+
+    .sassBg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 18%;
+      left: 46%;
+      width: 2.9rem;
+      height: 2.9rem;
+      border-radius: 50%;
+      background-color: #DC84AE;
+
+      img {
+        width: 72%;
+        /* transform: translateY(0.1rem); */
+      }
+    }
+
+    .jsBg {
+      position: absolute;
+      top: 18.5%;
+      left: 28%;
+      width: 3.2rem;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
