@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from './styles';
+import { MenuButton }  from '../MenuButton/MenuButton';
 
 export function Header() {
 
@@ -25,7 +26,7 @@ export function Header() {
       </a>
 
       {isMobile ? (
-        <span>Mobile</span>
+        <MenuButton />
       ) : (
         <div className="menus">
           <a href="#about"><span>Sobre</span></a>

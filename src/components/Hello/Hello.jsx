@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Rotate } from './styles';
 
 import sofiArt from '../../assets/sofiasArt-removebg.png';
