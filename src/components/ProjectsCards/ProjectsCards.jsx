@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import { Container, Screenshot } from './styles';
 
 import api from '../../services/axios';

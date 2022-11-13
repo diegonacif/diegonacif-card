@@ -1,4 +1,3 @@
-import React from 'react';
 import { ProjectsCards } from '../ProjectsCards/ProjectsCards';
 import { Container, Cards } from './styles';
 

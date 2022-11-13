@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, TechCard, Techs } from './styles';
 
 import htmlImg from '../../assets/html5.png';
