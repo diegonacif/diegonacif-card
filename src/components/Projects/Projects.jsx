@@ -2,7 +2,7 @@ import React from 'react';
 import { ProjectsCards } from '../ProjectsCards/ProjectsCards';
 import { Container, Cards } from './styles';
 
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
 
 export function Projects() {
