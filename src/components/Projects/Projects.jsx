@@ -30,7 +30,7 @@ export function Projects() {
         <span>&gt;</span>
       </div>
       <Cards>
-        <Carousel
+        {/* <Carousel
           responsive={responsive}
           draggable={false}
           ssr={true}
@@ -43,10 +43,10 @@ export function Projects() {
           customTransition={'transform 750ms ease-in-out'}
           removeArrowOnDeviceType={["tablet", "mobile"]}
         >
-          <ProjectsCards repoId='20' />
-          <ProjectsCards repoId='5' />
-          <ProjectsCards repoId='10'/>
-        </Carousel>
+        </Carousel> */}
+        <ProjectsCards repoId='20' />
+        <ProjectsCards repoId='5' />
+        <ProjectsCards repoId='10'/>
       </Cards>
     </Container>
   );
