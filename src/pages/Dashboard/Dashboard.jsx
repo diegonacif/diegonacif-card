@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { AboutMe } from '../../components/AboutMe/AboutMe';
 import { Contact } from '../../components/Contact/Contact';
 import { Header } from '../../components/Header/Header';
